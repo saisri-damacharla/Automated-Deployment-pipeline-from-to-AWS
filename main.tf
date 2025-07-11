@@ -58,7 +58,7 @@ resource "aws_security_group" "ec2_sg" {
 
 resource "aws_key_pair" "dev_key" {
   key_name   = "dev-key"
-  public_key = file("~/.ssh/id_rsa.pub")
+  public_key = file("~/.ssh/dev_key.pub")
 }
 
 resource "aws_instance" "app_server" {
